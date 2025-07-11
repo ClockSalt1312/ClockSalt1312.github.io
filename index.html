@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>北京时律盐创动画工作室|官方网站</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Microsoft YaHei', sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+        }
+        
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between; /* 新增：左右分布 */
+            padding: 15px 20px;
+            background-color: white;
+        }
+        
+        .logo {
+            height: 30px;
+        }
+        
+        /* 新增：小知识区域样式 */
+        .fun-fact {
+            flex: 1;
+            margin-left: 30px;
+            padding: 8px 15px;
+            background-color: #f8f9fa;
+            border-left: 3px solid #4CAF50;
+            font-size: 14px;
+            color: #555;
+            animation: fadeIn 1s ease-in-out;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+     
+        nav {
+            background-color: #e0f7e0;
+            padding: 10px 20px;
+        }
+        
+        .nav-container {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-item {
+            position: relative;
+            margin-right: 20px;
+        }
+        
+        .nav-btn {
+            background: none;
+            border: none;
+            padding: 8px 15px;
+            font-size: 16px;
+            cursor: pointer;
+            color: #333;
+        }
+        
+        .nav-btn:hover {
+            background-color: #c8e6c9;
+            border-radius: 4px;
+        }
+        
+        .dropdown {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            display: none;
+            z-index: 100;
+            min-width: 150px;
+        }
+        
+        .dropdown a {
+            display: block;
+            padding: 8px 15px;
+            text-decoration: none;
+            color: #333;
+        }
+        
+        .dropdown a:hover {
+            background-color: #f5f5f5;
+        }
+        
+        .nav-item:hover .dropdown {
+            display: block;
+        }
+        
+        main {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        
+        h1 {
+            margin-bottom: 30px;
+            color: #333;
+        }
+        
+        .partners {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        
+        .partner-logo {
+            width: 200px;
+            height: 100px;
+            object-fit: contain;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        
+        .partner-logo:hover {
+            transform: scale(1.05);
+        }
+        
+        .payment-codes {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        
+        .payment-code {
+            width: 200px;
+            height: auto;
+        }
+        
+        .contact {
+            background-color: white;
+            padding: 30px 20px;
+            margin: 40px auto 0;
+            text-align: center;
+            max-width: 900px;
+            width: 90%;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .contact h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        
+        .contact-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-width: 200px;
+        }
+        
+        .contact-item p {
+            margin: 10px 0;
+            color: #555;
+            font-size: 16px;
+        }
+        
+        .wechat-qr {
+            width: 150px;
+            height: 150px;
+            object-fit: contain;
+            border: 1px solid #eee;
+            padding: 5px;
+            background: white;
+        }
+        
+        .center-text{
+            text-align:center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.jpg" alt="北京时律盐创工作室" class="logo">
+        
+        <!-- 新增：小知识区域 -->
+        <div class="fun-fact" id="funFact">
+            你知道吗？逃单惊魂系列最初叫包饺子
+        </div>
+    </header>
+    
+    <nav>
+        <ul class="nav-container">
+            <li class="nav-item">
+                <button class="nav-btn">产品</button>
+                <div class="dropdown">
+                    <a href="https://www.bilibili.com/video/BV1n8PKeHEWT/?spm_id_from=333.337.search-card.all.click&vd_source=fdc38e8a1a4414971e599af20741aa66" target="_blank">逃单惊魂</a>
+                    <a href="https://www.bilibili.com/video/BV1zsTJzpEmn/?spm_id_from=333.337.search-card.all.click&vd_source=fdc38e8a1a4414971e599af20741aa66" target="_blank">逃单惊魂2</a>
+                    <a href="https://www.bilibili.com/video/BV1CsK7zDEtb?spm_id_from=333.788.recommend_more_video.0&vd_source=fdc38e8a1a4414971e599af20741aa66" target="_blank">逃单惊魂3</a>
+                    <a href="https://www.bilibili.com/video/BV1nBjhz1Erb?spm_id_from=333.788.recommend_more_video.3&vd_source=fdc38e8a1a4414971e599af20741aa66" target="_blank">那四（预告）</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <button class="nav-btn">资源</button>
+                <div class="dropdown">
+                    <a href="https://www.123865.com/s/iyqIjv-8VSPA" target="_blank">逃单惊魂系列</a>
+                    <a href="https://nasi.rth1.xyz/" target="_blank">那个疯狂星期四</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <button class="nav-btn" id="sponsor-btn">赞助</button>
+                <div class="dropdown">
+                    <div class="payment-codes">
+                        <img src="1.jpg" alt="微信" class="payment-code">
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    
+    <main>
+        <h1>合作公司</h1>
+        <div class="partners">
+            <a href="https://space.bilibili.com/3494359196502977?spm_id_from=333.788.upinfo.head.click" target="_blank"><img src="a.jpg" alt="北京万象影业集团" class="partner-logo"></a>
+            <a href="https://www.douyin.com/user/MS4wLjABAAAALJIz29WIOWHc5vK1lvPrwhVJkQMBpUsH0Owj4Y6fCI489V55ZrUCsdrTBk8iiQj7?from_tab_name=main" target="_blank"><img src="b.jpg" alt="沪上Dyx股份有限公司" class="partner-logo"></a>
+            <img src="c.jpg" alt="北京长子记影视" class="partner-logo">
+        </div>
+    </main>
+    
+    <div class="contact">
+        <h2>联系我们</h2>
+        <div class="contact-info">
+            <div class="contact-item">
+                <p>电话：13716977534  18519078135</p>
+                <p>万象集团访问：185105955517@163.com</p>
+            </div>
+            <div class="contact-item">
+                <p>地址：北京市怀柔区于家园路于家园一区甲九号楼</p>
+            </div>
+            <div class="contact-item">
+                <p>逃单惊魂官方微信</p>
+                <img src="d.jpg" alt="逃单惊魂官方微信" class="wechat-qr">
+            </div>
+            <div class="contact-item">
+                <p>如果123网盘强制收费，请联系逃单惊魂官方微信获取片源</p>
+                <p>如果你要点face的话，要完片源记得给爆点金币qwq(当然是自愿的啦)</p>
+            </div>
+        </div>
+    </div>
+
+    <p class="center-text">本网站由北京时律盐创动画工作室维护与更新，由北京万象影业集团运营</p>
+
+    <script>
+        // 点击赞助按钮时显示下拉菜单
+        document.getElementById('sponsor-btn').addEventListener('click', function() {
+            this.nextElementSibling.style.display = 
+                this.nextElementSibling.style.display === 'block' ? 'none' : 'block';
+        });
+
+        // 新增：随机小知识功能
+       const funFacts = [
+    "你知道吗？逃单惊魂系列最初叫包饺子",
+    "你知道吗？逃单惊魂2的制作人甚至比逃单惊魂3的制作人员还多！",
+    "你知道吗？“你知道吗”的内容一共有16条（算上这条:P）",
+    "你知道吗？工作室名字是让deepseek翻译的",
+    "你知道吗？那四的灵感来自曾经的一个废稿",
+    "你知道吗？逃单惊魂3的拍摄道具是最五花八门的...",
+    "你知道吗？我们平均每部作品要修改剧本8次以上",
+    "你知道吗？“你知道吗？”的内容都是钟导一条一条打上去的！",
+    "你知道吗？“时律盐创”工作室成立于2024年夏天",
+    "你知道吗？逃单惊魂2在冬天拍摄，结果在夏天才上映...",
+    "你知道吗？逃单惊魂3的钱包是钟导亲自扔上去的:P",
+    "你知道吗？我们所有作品都是独立制作完成的",
+    "你知道吗？钟导常被苏导施压T_T",
+    "你知道吗？逃单惊魂4的大股东不是沪上Dyx了！",
+    "你知道吗？我们全系宣传的是支持杜比视界，但是真正支持满血杜比的也就只有逃3了...",
+    "你知道吗？逃单惊魂全系的拍摄资金已超200元！" 
+    
+];
+
+let currentIndex = 0;
+
+function showNextFact() {
+    const factElement = document.getElementById('funFact');
+    factElement.textContent = funFacts[currentIndex];
+    
+    // 添加淡出淡入动画
+    factElement.style.animation = 'none';
+    void factElement.offsetWidth; // 触发重绘
+    factElement.style.animation = 'fadeIn 1s ease-in-out';
+    
+    // 更新索引，循环播放
+    currentIndex = (currentIndex + 1) % funFacts.length;
+}
+
+// 初始显示
+showNextFact();
+
+// 每5秒切换一次
+setInterval(showNextFact, 5000);
+    </script>
+</body>
+</html>
